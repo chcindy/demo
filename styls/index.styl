@@ -1,0 +1,71 @@
+*
+  margin: 0
+  padding: 0
+
+html, body
+  background-color: #cce8cf
+
+section
+  font-size: 16px
+  border: 2px solid #00aeef
+  min-height: 50px
+  width: 280px
+  margin: 20px
+  padding: 10px
+  box-sizing: border-box
+  .title
+    font-size: 14px
+    margin-bottom: 5px
+
+/*省市区联动－开始*/
+#ssq
+  select
+    width: 100px
+    margin: 5px
+
+/*省市区联动－结束*/
+
+/*<!--摆动动画－开始-->*/
+#baiddh
+  .baidong
+    width: 60px
+    height: 89px
+    img
+      width: 60px
+      height: 89px
+      transform-origin: center top
+      animation: left_right 3s infinite linear
+      animation-iteration-count: 3
+
+@keyframes left_right
+  0%
+    transform: rotate(0)
+  25%
+    transform: rotate(15deg)
+  50%
+    transform: rotate(0)
+  75%
+    transform: rotate(-15deg)
+  100%
+    transform: rotate(0)
+
+/*<!--摆动动画－结束-->*/
+
+/*<!--依次呈现动画－开始-->*/
+#yicichengxian
+  position: relative
+  height: 200px
+  .yici
+    position: absolute
+    top: 40px
+    left: 50px
+    width: 78px
+    overflow: hidden
+    img
+      width: 30px
+      height: 150px
+
+/*<!--依次呈现动画－结束-->*/
+
+
+
